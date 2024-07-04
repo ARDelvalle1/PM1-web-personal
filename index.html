@@ -5,25 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css"/>
     <link rel="stylesheet" href="./styles/reset.css">
-    <title>Document</title>
+    <title>Alexis Delvalle - Mi página web.</title>
 </head>
 <body>
     <header>
-        <div id="principal">
-            <h1>Alexis Delvalle</h1>
-        </div>
-        <div id="subtitulo">
-            <h2>Mi página web</h2>
-        </div>
-        
+            <div>
+                <h1 id="principal">Alexis Delvalle</h1>
+                <h2 class="titulo">Full stack developer</h2>
+            </div>
     </header>
+
     <main>
         <section>
             <div class="bloque">
                 <h1 class="titulo">Sobre mi:</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid, ab numquam.
-                   Sit nostrum ipsam voluptas libero quibusdam harum veniam beatae expedita, quisquam
-                   quod hic, minus laborum molestias magni eaque non?</p>
+                <p>Soy un estudiante con mucha curiosidad y fascinacion por la programacion. Me encanta aprender nuevas habilidades.
+                    Ademas de la programacion, me interesa todo lo que tenga que ver con la cultura general, divulgacion cientifica, culturas e
+                    historia.
+                </p>
             </div>
         </section>
 
@@ -33,46 +32,42 @@
                 <div class="bloque2">
                     <div>
                         <h1 class="titulo">HTML</h1>
-                        <img src="./styles/htmllogo.png" class="cards">
+                        <img src="./styles/htmllogo.png" class="logos">
                     </div>
                     <div>
                         <h1 class="titulo">CSS</h1>
-                        <img src="./styles/csslogo.png" class="cards">
-
+                        <img src="./styles/csslogo.png" class="logos">
                     </div>
                     <div>
                         <h1 class="titulo">Javascript</h1>
-                        <img src="./styles/jslogo.png" class="cards">
+                        <img src="./styles/jslogo.png" class="logos">
                     </div>
+                </div>
             </div>
-            
-            
         </section>
 
         <section>
             <div class="bloque">
                 <h1 class="titulo">Mis actividades favoritas</h1>
-                <form>
-                    <div>
-                        <label for="titulo">Título: </label>
-                        <input type="text" name="titulo"/>
-                        </div>
-
-                    <div>                       
-                        <label for="descripcion">Descripcion:</label>
-                        <input type="text" name="descripcion">
-                    </div>
-
-                    <div>
-                        <label for="urlima">URL de la imagen:</label>
-                        <input type="text" name="urlima">
-                    </div>
-                    <button>Agregar</button>
-                </form>
-                
+                <form action="" id="form" class="titulo">
+            
+                <input placeholder="Titulo:" id="title" type="text"/>
+            
+                <input placeholder="Descripción:" id="desc" type="text">
+           
+                <input placeholder="URL:" id="url" type="text">
+                <button id="add" type="submit">Agregar</button>
+                 </form>
+                 <div id="cardsContainer" class="gridContainer"></div>
             </div>
+            
+            
         </section>
+        <section>
+
+        </section>
+
     </main>
-    <script src="scripts/index.js"></script>
+    <script src="./scripts/index.js"></script>
 </body>
 </html>

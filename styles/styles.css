@@ -1,16 +1,18 @@
 #principal{
+    font-style: arial;
     font-size:40px;
     color:black;
-    background-color: rgb(255, 255, 255);
     width:fit-content;
     margin: 30px auto 10px auto;
     transition: 500ms;
 }
+
 #principal:hover{
-    font-size:50px;
+    font-size:45px;
 }
 
 .bloque{
+    font-style: arial;
     font-size:20px;
     color: rgb(0, 0, 0);
     background-color: rgb(0, 167, 204);
@@ -23,41 +25,61 @@
 }
 
 .bloque2{
+    font-style: arial;
     font-size:20px;
-    color: rgb(0, 0, 0);
     background-color: rgb(0, 167, 204);
     width:fit-content;
     margin:20px auto;
-    /* padding:1em; */
     display: flex;
 }
 
-.cards{
+.ordenHor{
+    display: flex;
+}
+
+.card{
     width: 200px;
-    border: 1px;
-    border: 1px solid black;
+    padding: 16px;
+    margin: 10px;
+}
+
+.card img{
+    max-width: 100%;
+}
+
+.logos{
+    width: 200px;
     margin: 10px;
     transition: 500ms;
 }
 
-.cards:hover{
-    width: 250px;
+.logos:hover{
+    width: 230px;
 }
 
 .titulo{
     font-size:25px;
     margin: auto;
     width: fit-content;
-    display: flex;
-    flex-direction: column;
+    align-items:center;
 }
 
-#subtitulo{
-    font-size:20px;
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    gap: 10px;
+    padding:16px;
+}
+.subtitulo{
+    font-size:16px;
     margin: auto;
     width:fit-content;
 }
 
 body{
     background-color: rgb(0, 4, 123);
+}
+header{
+    background-color: rgb(91, 255, 241);
+    display: flex;
 }
