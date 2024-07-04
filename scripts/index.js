@@ -18,7 +18,7 @@ class Repository {
     }
 
     createActivity(title, description, imgUrl) {
-        const id = ++this.id;
+        const id = this.id++;
         const newActivity = new Activity(id, title, description, imgUrl);
         this.activities.push(newActivity);
     }
